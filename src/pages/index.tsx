@@ -22,10 +22,10 @@ export default function Home() {
         <div className="h-[32rem] rounded-3xl p-10 flex flex-col gap-16 bg-[url('/gradient-bg.jpg')] bg-cover">
           <div>
             
-            <h1 className="text-4xl font-semibold">Hey I am Emir, I&apos;m a Software Engineer, Front-End dev with few years of experience.</h1>
+            <h1 className="text-4xl font-semibold">Hey I am Emir, I am a Software Engineer, Front-End dev with few years of experience.</h1>
           </div>
           <p className="flex-1">
-            I&apos;m an 18 years old software engineer trying to become better at programming. Currently studying Computer Science at university UIC.
+            I am an 18 years old software engineer trying to become better at programming. Currently studying Computer Science at university UIC.
             i got interested in business when i was 12 and started programming at 15. But then I stopped programming for like 2-3 years and now I am back.
             </p>
             <div className="flex flex-col lg:flex-row items-center gap-4 justify-self-end">
