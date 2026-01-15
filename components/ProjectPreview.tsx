@@ -1,6 +1,6 @@
 import React from 'react'
-import Arrow from '../public/arrow.svg'
-import { animate, motion } from 'framer-motion';
+// use <img> from public/ for arrow to avoid SVGR in production
+import { motion } from 'framer-motion';
 
 interface Props{
     name?: string | undefined;
@@ -20,12 +20,15 @@ const ProjectPreview: React.FC<Props> = ({
     projectLink = "#"
 }) => {
   return (
-    <motion.div className={ `h-[30rem] rounded-3xl overflow-hidden ${dark ? "dark" : ""}` }
-        style={{background: `${bgColor}`}} 
-        initial="initial"
-        whileInView="animate"
-        variants={PreviewAnimation}
-    >
+    <div className={ `h-[30rem] rounded-3xl overflow-hidden ${dark ? "dark" : ""}` }>
+      <motion.div
+          initial="initial"
+          whileInView="animate"
+          variants={PreviewAnimation}
+          style={{background: `${bgColor}`, width: '100%', height: '100%'}}
+          viewport={{ once: true }}
+          layout
+      >
         <div className='h-full w-full px-10 py-6 duration-[500ms] transition-all ease-in-out hover:scale-105 bg-contain bg-no-repeat bg-center'
             style={{backgroundImage: `url(${imageUrl})`}}
         >
@@ -34,16 +37,15 @@ const ProjectPreview: React.FC<Props> = ({
                 <h2 className='font-medium text-lg dark:text-white'>{name}</h2>
                 <p className='text-sm text-zinc-500 dark:text-zinc-300'>{description}</p>
             </div>
-            <div className='h-12 w-12 bg-white rounded-full flex justify-center items-center cursor-pointer'>
-                <a href={projectLink} target="_blank" rel="noopener noreferrer">
-                    <div className=' h-12 w-12 bg-white rounded-full flex justify-center items-center cursor-pointer'>
-                <Arrow className="w-6 h-6"/>
-                    </div>
-                </a>
-            </div>
+            <a href={projectLink} target="_blank" rel="noopener noreferrer">
+                <div className='h-12 w-12 bg-white rounded-full flex justify-center items-center cursor-pointer'>
+                    <img src="/arrow.svg" alt="Open project" className="w-6 h-6"/>
+                </div>
+            </a>
         </div>
         </div>
-    </motion.div>
+      </motion.div>
+    </div>
   )
 }
 

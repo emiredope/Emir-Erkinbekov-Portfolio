@@ -1,10 +1,6 @@
 import Head from "next/head";
 import Navbar from "../../components/Navbar";
 import SocialButton from "../../components/SocialButton";
-import Twitter from "../../public/twitter.svg";     
-import LinkedIn from "../../public/linkedin.svg"; 
-import Instagram from "../../public/instagram.svg";
-import Github from "../../public/github.svg"; 
 import ProjectPreview from "../../components/ProjectPreview";
 import LocalTime from "../../components/LocalTime";
 
@@ -35,10 +31,10 @@ export default function Home() {
             <div className="flex flex-col lg:flex-row items-center gap-4 justify-self-end">
               <button className="bg-black text-white font-medium py-3 px-12 rounded-full w-60 lg:w-auto">Contact me</button>
               <div className=" flex items-center gap-4">
-                <SocialButton bgColor="twitter" href="https://x.com/emiredope"> <Twitter/> </SocialButton>
-                <SocialButton bgColor="linkedin" href="https://www.linkedin.com/in/emir-erkinbekov-200707245/"> <LinkedIn/> </SocialButton>
-                <SocialButton bgColor="instagram" href="https://www.instagram.com/bigg__daddy___/"> <Instagram/> </SocialButton>
-                <SocialButton bgColor="github" href="https://github.com/emiredope"> <Github/> </SocialButton>
+                <SocialButton bgColor="twitter" href="https://x.com/emiredope"> <img src="/twitter.svg" alt="Twitter" className="w-5 h-5"/> </SocialButton>
+                <SocialButton bgColor="linkedin" href="https://www.linkedin.com/in/emir-erkinbekov-200707245/"> <img src="/linkedin.svg" alt="LinkedIn" className="w-5 h-5"/> </SocialButton>
+                <SocialButton bgColor="instagram" href="https://www.instagram.com/bigg__daddy___/"> <img src="/instagram.svg" alt="Instagram" className="w-5 h-5"/> </SocialButton>
+                <SocialButton bgColor="github" href="https://github.com/emiredope"> <img src="/github.svg" alt="Github" className="w-5 h-5"/> </SocialButton>
               </div>
               <LocalTime />
             </div>     
