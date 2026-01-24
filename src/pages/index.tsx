@@ -46,7 +46,7 @@ export default function Home() {
         <ProjectPreview
           name="Project 1"
           description="Coming soon..."
-          imageUrl="/project-4.png"
+          imageUrl="/project-1.png"
           bgColor="#685cdd"
           dark
         />
