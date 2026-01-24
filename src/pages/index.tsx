@@ -44,12 +44,11 @@ export default function Home() {
 
       <section className="grid grid-cols-1 lg:grid-cols-2 gap-4 my-4 ">
         <ProjectPreview
-          name="Car rentals website"
-          description="Built with react, tailwindcss and supabase for the backend. With RLS policies implemented."
+          name="Project 1"
+          description="Coming soon..."
           imageUrl="/project-4.png"
           bgColor="#685cdd"
           dark
-          projectLink="https://autojoy-rental-app.lovable.app"
         />
         <ProjectPreview
           name="Project 2"
