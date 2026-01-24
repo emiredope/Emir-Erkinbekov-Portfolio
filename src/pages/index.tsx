@@ -26,7 +26,7 @@ export default function Home() {
           </div>
           <p className="flex-1">
             I am an 18 years old software engineer trying to become better at programming. Currently studying Computer Science at university UIC.
-            i got interested in business when i was 12 and started programming at 15. But then I stopped programming for like 2-3 years and now I am back.
+            i got interested in business when i was 12 and started programming at 15.
             </p>
             <div className="flex flex-col lg:flex-row items-center gap-4 justify-self-end">
               <button className="bg-black text-white font-medium py-3 px-12 rounded-full w-60 lg:w-auto">Contact me</button>
