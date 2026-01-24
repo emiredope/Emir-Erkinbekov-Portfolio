@@ -19,7 +19,7 @@ export default function Home() {
 
       <section className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-4 mb-4">
         
-        <div className="h-[32rem] rounded-3xl p-10 flex flex-col gap-16 bg-[url('/_.jpeg')] bg-cover">
+        <div className="h-[32rem] rounded-3xl p-10 flex flex-col gap-16 bg-[url('/gradient-bg.jpg')] bg-cover">
           <div>
             
             <h1 className="text-4xl font-semibold">Hey I am Emir, I am a Software Engineer, Front-End dev with few years of experience.</h1>
@@ -39,7 +39,7 @@ export default function Home() {
               <LocalTime />
             </div>     
         </div>
-        <div className="h-[30rem] rounded-3xl p-8 bg-[url('/Photo123.jpg')] bg-cover bg-center"/>
+        <div className="h-[32rem] rounded-3xl p-8 bg-[url('/clouds.jpeg')] bg-cover bg-center"/>
       </section>
 
       <section className="grid grid-cols-1 lg:grid-cols-2 gap-4 my-4 ">
